@@ -19,7 +19,6 @@ namespace R5T.Goteborg.Octokit.Sardinia
                 .AddOptions()
                 .Configure<RawGitHubConfiguration>()
                 .ConfigureOptions<GitHubConfigurationConfigureOptions>()
-                .AddSingleton<IProductHeaderValueProvider, ConfigurationBasedProductHeaderValueProvider>();
                 ;
 
             return services;
