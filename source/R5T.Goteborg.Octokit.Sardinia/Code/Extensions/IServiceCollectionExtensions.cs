@@ -13,7 +13,7 @@ namespace R5T.Goteborg.Octokit.Sardinia
 {
     public static class IServiceCollectionExtensions
     {
-        public static IServiceCollection UseGitHubConfiguration(this IServiceCollection services)
+        public static IServiceCollection AddGitHubConfiguration(this IServiceCollection services)
         {
             services
                 .AddOptions()
