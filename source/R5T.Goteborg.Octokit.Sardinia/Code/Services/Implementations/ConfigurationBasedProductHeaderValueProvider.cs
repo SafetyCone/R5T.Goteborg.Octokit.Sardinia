@@ -4,14 +4,17 @@ using Microsoft.Extensions.Options;
 
 using Octokit;
 
-using R5T.Goteborg.Octokit.Sardinia.Configuration;using R5T.T0064;
+using R5T.Goteborg.Octokit.Sardinia.Configuration;
+
+using R5T.T0064;
 
 
 namespace R5T.Goteborg.Octokit.Sardinia
-{[ServiceImplementationMarker]
+{
     /// <summary>
     /// Uses <see cref="ProductHeaderValue.Parse(string)"/> in order to parse "foo" or "foo/1.0" GitHub configuration product header values.
     /// </summary>
+    [ServiceImplementationMarker]
     public class ConfigurationBasedProductHeaderValueProvider : IProductHeaderValueProvider,IServiceImplementation
     {
         private IOptions<GitHubConfiguration> GitHubConfiguration { get; }
